@@ -1,9 +1,10 @@
 import logo from "./logo.svg";
+import { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
 import { logIn, logOut } from "./redux/actions/user";
 
-class App {
+class App extends Component {
   onClick = () => {
     this.props.dispatchLogIn({
       id: "zerocho",
